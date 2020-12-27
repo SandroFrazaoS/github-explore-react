@@ -68,7 +68,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 `;
 
-export const Repository = styled.div`
+export const IRepository = styled.div`
   display: flex;
   align-items: center;
   transition: transform 0.2s;
@@ -133,7 +133,7 @@ export const DeleteButton = styled.button`
     color: #aaaaaa;
     transition: visibility 0.2s, opacity 0.2s;
 
-    ${Repository}:hover & {
+    ${IRepository}:hover & {
       visibility: visible;
       opacity: 1;
       &:hover {
