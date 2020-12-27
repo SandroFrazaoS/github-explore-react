@@ -16,7 +16,7 @@ import {
   DeleteButton,
 } from './styles';
 
-interface Repository {
+interface IRepository {
   full_name: string;
   description: string;
   owner: {
@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
   const [newRepo, setNewRepo] = useState('');
   const [inputError, setInputError] = useState('');
 
-  const [repositories, setRepositories] = useState<Repository[]>(() => {
+  const [repositories, setRepositories] = useState<IRepository[]>(() => {
     const storageRepositories = localStorage.getItem(
       '@GithubExplorer:repositories',
     );
@@ -68,7 +68,7 @@ const Dashboard: React.FC = () => {
     }
 
     try {
-      const response = await api.get<Repository>(`repos/${newRepo}`);
+      const response = await api.get<IRepository>(`repos/${newRepo}`);
       const respository = response.data;
       setRepositories([...repositories, respository]);
       setNewRepo('');
