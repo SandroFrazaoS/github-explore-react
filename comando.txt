@@ -1,0 +1,6 @@
+create-react-app nome-do-projeto --template=typescript
+
+yarn start
+
+yarn add styled-components
+ yarn add @types/styled-components -D
