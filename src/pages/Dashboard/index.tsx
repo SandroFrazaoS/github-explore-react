@@ -12,7 +12,7 @@ import {
   Form,
   Repositories,
   Error,
-  Repository,
+  IRepository,
   DeleteButton,
 } from './styles';
 
@@ -107,7 +107,7 @@ const Dashboard: React.FC = () => {
 
       <Repositories>
         {repositories.map(repository => (
-          <Repository key={repository.full_name}>
+          <IRepository key={repository.full_name}>
             <DeleteButton
               type="button"
               onClick={() => handleRemoveRepository(repository.full_name)}
@@ -129,7 +129,7 @@ const Dashboard: React.FC = () => {
               </div>
               <FiChevronRight size={20} />
             </Link>
-          </Repository>
+          </IRepository>
         ))}
       </Repositories>
     </>
