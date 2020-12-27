@@ -1,4 +1,4 @@
-![View_Projeto](Projeto.gif)
+![ViewProjeto](Projeto.gif)
 
 <h1 align="center">
   <img  src="src/assets/logo.svg"/>
