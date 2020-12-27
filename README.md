@@ -1,4 +1,4 @@
-![Demo](.github/Projeto.gif)
+![View_Projeto](Projeto.gif)
 
 <h1 align="center">
   <img  src="src/assets/logo.svg"/>
